@@ -10,7 +10,7 @@ namespace WzorzecZlozony_Kaczki.Model
 {
     public class Obserwowany : IKwakObserwowany
     {
-        static ArrayList list;
+        static ArrayList list = new ArrayList();
         IKwakObserwowany kaczka;
         
         public Obserwowany(IKwakObserwowany kaczka)
@@ -28,10 +28,8 @@ namespace WzorzecZlozony_Kaczki.Model
 
         public void ZarejestrujObserwatora(IObserwator obserwator)
         {
-            if (list == null)
-                list = new ArrayList();
-
             list.Add(obserwator);
         }
+
     }
 }

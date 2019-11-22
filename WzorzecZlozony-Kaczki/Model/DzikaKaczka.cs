@@ -30,5 +30,10 @@ namespace WzorzecZlozony_Kaczki.Model
         {
             obserwowany.ZarejestrujObserwatora(obserwator);
         }
+
+        public override String ToString()
+        {
+            return "Dzika kaczka";
+        }
     }
 }

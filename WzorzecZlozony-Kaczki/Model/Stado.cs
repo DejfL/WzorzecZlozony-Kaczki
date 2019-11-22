@@ -20,8 +20,8 @@ namespace WzorzecZlozony_Kaczki.Model
         {
             foreach (IKwaczaca item in list)
             {
-                item.Kwacz();
                 PowiadomObserwatorow();
+                item.Kwacz();
             }
         }
 

@@ -33,5 +33,10 @@ namespace WzorzecZlozony_Kaczki.Model
         {
             obserwowany.ZarejestrujObserwatora(obserwator);
         }
+
+        public override string ToString()
+        {
+            return "Ges";
+        }
     }
 }

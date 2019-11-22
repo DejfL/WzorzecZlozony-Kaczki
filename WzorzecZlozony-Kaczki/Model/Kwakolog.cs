@@ -11,7 +11,8 @@ namespace WzorzecZlozony_Kaczki.Model
     {
         public void Aktualizuj(IKwakObserwowany kwakObserwowany)
         {
-            Console.WriteLine("Kwakolog: " + kwakObserwowany.ToString() + " Kwaknela");
+            Console.WriteLine("Kwakolog: " + kwakObserwowany + " Kwaknela");
         }
+
     }
 }

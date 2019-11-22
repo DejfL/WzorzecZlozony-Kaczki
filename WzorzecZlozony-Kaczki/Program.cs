@@ -44,14 +44,14 @@ namespace WzorzecZlozony_Kaczki
             stadoDzikichKaczek.Dodaj(dzikaKaczka3);
             stadoDzikichKaczek.Dodaj(dzikaKaczka4);
 
-            stado.Dodaj(stadoDzikichKaczek);
+           // stado.Dodaj(stadoDzikichKaczek);
 
             Console.WriteLine("Symulator kaczek stado");
 
             Kwakolog kwakolog = new Kwakolog();
-            dzikaKaczka4.ZarejestrujObserwatora(kwakolog);
+            stado.ZarejestrujObserwatora(kwakolog);
             
-            Uruchom(dzikaKaczka4);
+            Uruchom(stado);
 
             //Console.WriteLine("Symulator dzikich kaczek");
             //Uruchom(stadoDzikichKaczek);

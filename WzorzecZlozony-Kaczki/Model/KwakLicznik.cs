@@ -9,21 +9,18 @@ namespace WzorzecZlozony_Kaczki.Model
 {
     public class KwakLicznik : IKwaczaca
     {
-        Obserwowany obserwowany;
         IKwaczaca kaczka;
         static int liczbaKwakniec = 0;
 
         public KwakLicznik(IKwaczaca kaczka)
         {
             this.kaczka = kaczka;
-            //obserwowany = new Obserwowany(this);
         }
 
         public void Kwacz()
         {
             kaczka.Kwacz();
             liczbaKwakniec++;
-            PowiadomObserwatorow();
         }
 
         public static int PobierzLiczbeKwakniec()
@@ -33,12 +30,17 @@ namespace WzorzecZlozony_Kaczki.Model
 
         public void ZarejestrujObserwatora(IObserwator obserwator)
         {
-           // obserwowany.ZarejestrujObserwatora(obserwator);
+            kaczka.ZarejestrujObserwatora(obserwator);
         }
 
         public void PowiadomObserwatorow()
         {
-          //  obserwowany.PowiadomObserwatorow();
+            kaczka.PowiadomObserwatorow();
+        }
+
+        public override String ToString()
+        {
+            return kaczka.ToString();
         }
     }
 }
